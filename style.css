@@ -1,0 +1,74 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+body {
+background-color: #1e1e2f;
+color: #fff;
+}
+.hero {
+background: linear-gradient(135deg, #2b5876, #4e4376);
+text-align: center;
+padding: 4rem 2rem;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.hero h1 {
+font-size: 2.5rem;
+margin-bottom: 0.5rem;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+gap: 2rem;
+padding: 3rem 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+.book-card {
+background: #2a2a40;
+border-radius: 10px;
+box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+overflow: hidden;
+text-align: center;
+transition: transform 0.3s, box-shadow 0.3s;
+text-decoration: none;
+color: inherit;
+display: flex;
+flex-direction: column;
+}
+.book-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+.book-cover {
+width: 100%;
+height: 310px;
+background: #3f3f5a;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #aaa;
+}
+canvas {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.book-info {
+padding: 1.2rem;
+border-top: 2px solid #4e4376;
+}
+.book-title {
+font-size: 1.1rem;
+font-weight: bold;
+word-break: break-word;
+}
+.footer {
+text-align: center;
+padding: 2rem;
+background: #151522;
+color: #888;
+margin-top: auto;
+}
